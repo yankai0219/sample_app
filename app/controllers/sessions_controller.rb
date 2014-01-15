@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       flash[:success] = "Welcome to the Sample App!"
       sign_in user  #sign_in is a method in session_helper module
-      redirect_to user
+      redirect_back_or user
     else
       # Create an error message and re-render the signin form.
       flash.now[:error] = 'Invalid email/password combination' 
