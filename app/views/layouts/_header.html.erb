@@ -1,4 +1,5 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
+<<<<<<< HEAD
   <div class="navbar-inner">
     <div class="container">
       <%= link_to "sample app", root_path, id: "logo" %>
@@ -27,5 +28,18 @@
         </ul>
       </nav>
     </div>
+=======
+   <div class="navbar-inner">
+     <div class="container">
+       <%= link_to "sample app", static_pages_home_path, id: "logo" %>
+       <nav>
+         <ul class="nav pull-right">
+           <li><%= link_to "Home",    static_pages_home_path %></li>
+           <li><%= link_to "Help",    static_pages_help_path %></li>
+           <li><%= link_to "Sign in", users_new_path %></li>
+         </ul>
+       </nav>
+     </div>
+>>>>>>> 2477823d2feb745896c45d5fef44f78913b11676
   </div>
 </header>
